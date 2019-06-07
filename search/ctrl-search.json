@@ -1,0 +1,17 @@
+---
+layout: null
+---
+{
+	"code" : 0 ,
+	"data" : [
+	 {% for post in site.posts %}
+	{
+		"title" : "{{ post.date | date: "%Y/%m/%d" }} {{ post.title | remove: '"'  }} {% for categorie in post.categories %}{% if forloop.rindex != 1 %}{{ categorie }} {% else %}{{ categorie }}{% endif %}{% endfor %}",
+		"url" : "{{site.baseUrl}}{{ post.url }}"
+	}
+	{% if forloop.rindex != 1  %}
+	,
+	{% endif %}
+    {% endfor %}
+	]
+}

@@ -1,0 +1,15 @@
+<script>window.blog={baseUrl:""}</script>
+<!-- 防止缓存，编译后链接更新 -->
+
+<!-- jQuery -->
+<script src=" {{ site.baseUrl }}/search/js/jquery.min.js?t={{ site.time | date: "%Y%m%d%H%M%S" }} "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src=" {{ site.baseUrl }}/search/js/bootstrap.min.js?t={{ site.time | date: "%Y%m%d%H%M%S" }} "></script>
+
+<script src=" {{ site.baseUrl }}/search/js/bootstrap3-typeahead.min.js?t={{ site.time | date: "%Y%m%d%H%M%S" }} "></script>
+<script src=" {{ site.baseUrl }}/search/js/ctrl-search.js?t={{ site.time | date: "%Y%m%d%H%M%S" }} "></script>
+
+{% for js in pageJS %}
+<script type="text/javascript" src="{{site.baseUrl}}/static/js/{{ js }}?t={{ site.time | date: "%Y%m%d%H%M%S" }}"></script>
+{% endfor %}

@@ -1,0 +1,19 @@
+<footer class="container footer">
+  <span>{{ site.footerText }}</span>
+  <div id="moveUp"></div>
+
+  <div class="ctrl-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control ctrl-search-content" id="ctrl-search-content" style="position: fixed; top: 60px"
+      placeholder="日期 文章标题 标签">
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+      <img src="{{ site.baseUrl }}/search/img/ctrl-close.png" id="ctrl-close-btn" />
+    </div>
+  </div>
+
+  <div style="position: fixed; left: 16px; bottom: 20px;">
+    <img src="{{ site.baseUrl }}/search/img/ctrl-search.png" id="ctrl-search-btn" title="双击ctrl试一下" />
+  </div>
+
+</footer>
