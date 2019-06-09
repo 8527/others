@@ -1,13 +1,13 @@
-		@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
             .dropdown-menu {
-				position:relative;
+		position:relative;
                 float: none;
                 font-size: 20px;
                 width: 70%;
                 margin: 0 15%;
             }
 
-			.ctrl-search-tool ul{
+		.ctrl-search-tool ul{
                  width: 70% ;
                  white-space:nowrap;
                  overflow:hidden;
@@ -32,18 +32,18 @@
 
         @media screen and (max-width: 767px) {
             .dropdown-menu {
-				position:relative;
+		position:relative;
                 float: none;
                 font-size: 20px;
                 width: 96%;
                 margin: 0 2%;
             }
-			.ctrl-search-tool ul{
-				width: 96% ;
-				white-space:nowrap; 
-				overflow:hidden; 
-				text-overflow: ellipsis;
-			}
+	    .ctrl-search-tool ul{
+		width: 96% ;
+		white-space:nowrap; 
+		overflow:hidden; 
+		text-overflow: ellipsis;
+	    }
 
             .ctrl-search-content {
                 width: 96%;
