@@ -173,7 +173,7 @@ body::-webkit-scrollbar {
 }
 .footer > * {
   font-size: 14px;
-  margin: 0 4px;
+  margin: 0px;
   position: relative;
 }
 .footer > *:first-child {
